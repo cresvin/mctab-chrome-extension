@@ -9,3 +9,9 @@
     font-family: "Inter", sans-serif;
   }
 }
+
+@layer utilities {
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+}

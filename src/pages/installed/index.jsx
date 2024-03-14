@@ -8,6 +8,7 @@ import Installed from "./Installed";
 function init() {
   const rootContainer = document.querySelector("#root");
   if (!rootContainer) throw new Error("Can't find root element");
+
   const root = createRoot(rootContainer);
   root.render(<Installed />);
 }
