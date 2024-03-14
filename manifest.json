@@ -9,11 +9,5 @@
   },
   "background": {
     "service_worker": "src/pages/service-worker/index.js"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["src/pages/new-tab/index.html"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }

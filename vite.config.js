@@ -15,7 +15,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         installed: resolve(__dirname, "src/pages/installed/index.html"),
-        newtab: resolve(__dirname, "src/pages/new-tab/index.html"),
       },
     },
   },
