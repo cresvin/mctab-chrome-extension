@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import News from "./News";
+import NewsCard from "./NewsCard";
 
 export default function NewsContainer() {
   const { isPending, error, data } = useQuery({
@@ -10,6 +10,7 @@ export default function NewsContainer() {
       );
       return response.json();
     },
+    
   });
 
   return (
@@ -20,7 +21,7 @@ export default function NewsContainer() {
         <div className="scrollbar-hidden overflow-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {data.entries.map((news, index) => (
-              <News news={news} key={index} />
+              <NewsCard news={news} key={index} />
             ))}
           </div>
         </div>

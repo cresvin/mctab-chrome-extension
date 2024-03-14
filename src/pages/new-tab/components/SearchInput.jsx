@@ -10,7 +10,7 @@ export default function SearchInput() {
   return (
     <input
       type="text"
-      className="px-4 border border-zinc-800 py-2 rounded-md outline-none focus:ring ring-yellow-500 bg-zinc-900 placeholder:text-zinc-400 w-full"
+      className="px-8 border border-zinc-800 py-4 backdrop-blur-md rounded-md outline-none focus:ring ring-indigo-500 bg-zinc-900/50 placeholder:text-zinc-400 w-full"
       placeholder="Search for anything..."
       onKeyDown={(e) => {
         if (e.key === "Enter") handleSearch(e);
