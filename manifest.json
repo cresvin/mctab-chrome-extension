@@ -9,5 +9,6 @@
   },
   "background": {
     "service_worker": "src/pages/service-worker/index.js"
-  }
+  },
+  "permissions": ["storage"]
 }

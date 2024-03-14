@@ -13,12 +13,12 @@ export default function NewsContainer() {
   });
 
   return (
-    <div className="flex mt-10 flex-col grow overflow-auto">
+    <div className="flex flex-col mt-10 grow overflow-auto">
       {isPending && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {data && (
         <div className="scrollbar-hidden overflow-auto">
-          <div className="flex flex-col gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {data.entries.map((news, index) => (
               <News news={news} key={index} />
             ))}
