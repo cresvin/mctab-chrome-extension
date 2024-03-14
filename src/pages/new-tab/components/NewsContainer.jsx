@@ -10,7 +10,6 @@ export default function NewsContainer() {
       );
       return response.json();
     },
-    
   });
 
   return (
@@ -20,7 +19,7 @@ export default function NewsContainer() {
       {data && (
         <div className="scrollbar-hidden overflow-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {data.entries.map((news, index) => (
+            {data.entries.slice(0, 15).map((news, index) => (
               <NewsCard news={news} key={index} />
             ))}
           </div>

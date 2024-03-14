@@ -5,7 +5,7 @@ import SearchInput from "./components/SearchInput";
 export default function NewTab() {
   return (
     <main
-      className="bg-blend-darken bg-black/60 h-screen"
+      className="bg-blend-darken bg-black/80 outline -outline-offset-8 outline-zinc-800 h-screen"
       style={{
         backgroundImage: `url(${background}`,
       }}
